@@ -29,7 +29,7 @@ This repository contains a web application for exploring and managing recipes. I
 1. Clone the repository to your local machine:
 
     ```
-    git clone https://github.com/yourusername/foodRecepie-app.git
+    git clone https://github.com/namra22/FoodRecipeApp.git
     ```
 
 2. Navigate to the project directory:
