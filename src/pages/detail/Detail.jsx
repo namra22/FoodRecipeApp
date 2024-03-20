@@ -5,7 +5,7 @@ import { GlobalContext } from "../../context/Context";
 export default function Detail() {
   const { id } = useParams();
   const { recepieDetails, setRecepieDetails,handleAddToFavourite,favouritesList } = useContext(GlobalContext);
-  console.log(recepieDetails)
+  
   async function getRecepieDetails() {
     try {
       const response = await fetch(

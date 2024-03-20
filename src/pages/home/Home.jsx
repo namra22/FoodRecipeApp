@@ -4,7 +4,7 @@ import RecepieItem from "../../components/RecepieItem";
 
 export default function Home() {
   const { recipeList, pending } = useContext(GlobalContext);
-  console.log(recipeList);
+  
   return (
     <div className="container mx-auto mt-8">
       {pending ? (

@@ -3,23 +3,7 @@ import { GlobalContext } from "../../context/Context";
 import RecepieItem from "../../components/RecepieItem";
 
 export default function Favourite() {
-  const { favouritesList, pending, setFavouritesList } = useContext(GlobalContext);
-
-  // Load favorites from localStorage when component mounts
-  useEffect(() => {
-    console.log("whsgdsjhfh");
-    const storedFavorites = localStorage.getItem("favorites");
-    if (storedFavorites) {
-      setFavouritesList(JSON.parse(storedFavorites));
-     
-    }
-  }, []);
-
-  // Update localStorage whenever favoritesList changes
-  useEffect(() => {
-    console.log("whsgdsjhfh");
-    localStorage.setItem("favorites", JSON.stringify(favouritesList));
-  }, [favouritesList]);
+  const { favouritesList, pending } = useContext(GlobalContext);
 
   return (
     <div className="container mx-auto mt-8">

@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/Context";
 
 export default function Navbar(){
    const{searchItems,setSearchItems,handleSubmit}=useContext(GlobalContext);
-   console.log(searchItems);
+   
 return(
    <nav className="flex justify-between items-center py-6 lg:py-6 px-4 lg:px-8 container mx-auto flex-col lg:flex-row lg:items-center gap-5 lg:gap-0 bg-green-100 rounded-full">
    <h2 className="text-3xl font-bold text-black">
