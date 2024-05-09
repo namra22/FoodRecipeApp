@@ -11,7 +11,7 @@ function App() {
     <div className="min-h-screen p-6 bg-white text-gray-600 text-lg">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/FoodRecipeApp" element={<Home />} />
         <Route path="/favourites" element={<Favourite />} />
         <Route path="/recepie-details/:id" element={<Detail />} />
       </Routes>
